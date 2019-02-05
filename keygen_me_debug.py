@@ -55,10 +55,7 @@ def check_key(key):
     for j in num_key[0:11]:
         m += j
     if m % 10 != num_key[13] - 0x30:
-        print(num_key[13] - 0x30)
-        print(m % 10)
         print("13")
-        print(m)
         wrong()
     if num_key[12] % 2 != 0:
         print("12")
